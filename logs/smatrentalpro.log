@@ -1,0 +1,36 @@
+2024-05-29 09:05:58,343 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2024-05-29 09:05:58,411 INFO o.s.b.StartupInfoLogger [main] Starting SmatRentalProApplication using Java 19.0.2 with PID 32348 (C:\Users\pmugomba\Documents\smatech\backend\smatrentalpro\target\classes started by pmugomba in C:\Users\pmugomba\Documents\smatech\backend\smatrentalpro)
+2024-05-29 09:05:58,415 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-05-29 09:05:59,574 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-29 09:05:59,685 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 102 ms. Found 5 JPA repository interfaces.
+2024-05-29 09:06:00,347 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 9010 (http)
+2024-05-29 09:06:00,356 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9010"]
+2024-05-29 09:06:00,357 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-05-29 09:06:00,357 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-05-29 09:06:00,457 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-05-29 09:06:00,458 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1997 ms
+2024-05-29 09:06:00,688 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-29 09:06:00,747 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.6.Final
+2024-05-29 09:06:00,916 WARN o.h.b.i.MetadataBuilderImpl$MetadataBuildingOptionsImpl [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-05-29 09:06:01,042 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-29 09:06:01,228 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d459bda
+2024-05-29 09:06:01,230 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-29 09:06:01,305 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-05-29 09:06:02,850 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-29 09:06:02,860 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-29 09:06:03,275 INFO s.c.z.s.u.j.GlobalKeyUtils [main] loading keys from file: security/access-token-public.key, security/access-token-private.key
+2024-05-29 09:06:03,315 INFO s.c.z.s.u.j.GlobalKeyUtils [main] loading keys from file: security/refresh-token-public.key, security/refresh-token-private.key
+2024-05-29 09:06:03,621 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-29 09:06:04,926 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16b1b213, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77f1026e, org.springframework.security.web.context.SecurityContextHolderFilter@72364a40, org.springframework.security.web.header.HeaderWriterFilter@22781286, org.springframework.security.web.authentication.logout.LogoutFilter@55e75ce0, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@6421d85c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b6ad2eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61868687, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1df8c7f4, org.springframework.security.web.session.SessionManagementFilter@19e03398, org.springframework.security.web.access.ExceptionTranslationFilter@1f832df0, org.springframework.security.web.access.intercept.AuthorizationFilter@736af6f3]
+2024-05-29 09:06:05,257 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9010"]
+2024-05-29 09:06:05,290 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 9010 (http) with context path ''
+2024-05-29 09:06:05,299 INFO o.s.b.StartupInfoLogger [main] Started SmatRentalProApplication in 7.627 seconds (process running for 8.836)
+2024-05-29 09:06:16,179 INFO o.a.j.l.DirectJDKLog [http-nio-9010-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-29 09:06:16,179 INFO o.s.w.s.FrameworkServlet [http-nio-9010-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-29 09:06:16,181 INFO o.s.w.s.FrameworkServlet [http-nio-9010-exec-1] Completed initialization in 1 ms
+2024-05-29 09:06:41,709 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [http-nio-9010-exec-1] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: smattect.co.zw.smatrentalpro.controller.PropertyController
+2024-05-29 09:06:41,754 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [http-nio-9010-exec-1] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: smattect.co.zw.smatrentalpro.controller.RoleController
+2024-05-29 09:06:41,758 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [http-nio-9010-exec-1] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: smattect.co.zw.smatrentalpro.controller.RegistrationController
+2024-05-29 09:06:41,777 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [http-nio-9010-exec-1] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: smattect.co.zw.smatrentalpro.controller.AuthenticationController
+2024-05-29 09:06:41,783 WARN o.s.c.LocalVariableTableParameterNameDiscoverer [http-nio-9010-exec-1] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: smattect.co.zw.smatrentalpro.controller.ApplicantsController
+2024-05-29 09:06:41,817 INFO o.s.a.AbstractOpenApiResource [http-nio-9010-exec-1] Init duration for springdoc-openapi is: 194 ms

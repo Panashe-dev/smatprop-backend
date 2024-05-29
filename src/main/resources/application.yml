@@ -1,0 +1,54 @@
+
+Spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/smatrentalpro?autoReconnect=true&useSSL=false
+    username: root
+    password: Pass$123_@2023
+    initialize: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    use_sql_comments: true
+    format_sql: true
+
+---
+
+ACCESS_TOKEN_PRIVATE_KEY_PATH: "security/access-token-private.key"
+ACCESS_TOKEN_PUBLIC_KEY_PATH: "security/access-token-public.key"
+REFRESH_TOKEN_PRIVATE_KEY_PATH: "security/refresh-token-private.key"
+REFRESH_TOKEN_PUBLIC_KEY_PATH: "security/refresh-token-public.key"
+
+---
+
+spring:
+  hateoas:
+    use-hal-as-default-json-media-type: false
+
+---
+spring-doc:
+  api-docs:
+    path: /api-docs
+    swagger-ui:
+      operationsSorter: method
+---
+
+spring:
+  main:
+    allow-bean-definition-overriding: false
+    allow-circular-references: true
+
+---
+
+server:
+  port: ${SERVER_PORT:9010}
+  error:
+    path: /error
+  tomcat:
+    max-threads: 20
+
+---
+#twilio:
+#  api:
+#    key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
