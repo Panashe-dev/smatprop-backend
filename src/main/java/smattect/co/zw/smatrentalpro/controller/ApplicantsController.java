@@ -1,6 +1,7 @@
 package smattect.co.zw.smatrentalpro.controller;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,7 @@ public class ApplicantsController {
     private final ApplicantsService applicantsService;
 
     @PostMapping("/add")
-    public ResponseEntity<ResponseMessage> addApplication(@RequestBody ApplicantsRequest applicantsRequest){
+    public ResponseEntity<ResponseMessage> addApplication(@RequestBody @Valid ApplicantsRequest applicantsRequest){
          applicantsService.addApplicant(applicantsRequest);
         return ResponseEntity.ok(new ResponseMessage("property created success"));
     }

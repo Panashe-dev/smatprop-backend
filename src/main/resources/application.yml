@@ -49,6 +49,3 @@ server:
     max-threads: 20
 
 ---
-#twilio:
-#  api:
-#    key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
