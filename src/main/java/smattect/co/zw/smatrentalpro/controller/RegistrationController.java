@@ -3,6 +3,7 @@ package smattect.co.zw.smatrentalpro.controller;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
@@ -34,7 +35,7 @@ public class RegistrationController {
     private final ApplicationEventPublisher publisher;
 
     @PostMapping("/register")
-    public ResponseEntity<ResponseMessage> registerUser(@RequestBody UserRegistrationRequest userRegistrationRequest,
+    public ResponseEntity<ResponseMessage> registerUser(@RequestBody @Valid UserRegistrationRequest userRegistrationRequest,
                                                         final HttpServletRequest request) throws IOException {
         User user = userService.registerUser(userRegistrationRequest);
         publisher.publishEvent(new RegistrationCompleteEvent(
@@ -43,7 +44,6 @@ public class RegistrationController {
         ));
         return ResponseEntity.ok(new ResponseMessage("registration success"));
     }
-
 
 
     @GetMapping("/verify/registration")
